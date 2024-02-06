@@ -1,0 +1,8 @@
+@import url("../../node_modules/normalize.css/normalize.css");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}/*# sourceMappingURL=main.css.map */
