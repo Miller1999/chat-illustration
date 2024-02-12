@@ -1,6 +1,7 @@
 @import url("../../node_modules/normalize.css/normalize.css");
 * {
   font-family: "Rubik", sans-serif;
+  box-sizing: content-box;
 }
 
 html {
@@ -207,6 +208,7 @@ p {
   margin-block-start: 150px;
   align-items: center;
   width: 85%;
+  max-width: 400px;
   align-self: center;
   text-align: center;
   padding: 5rem;
@@ -218,4 +220,35 @@ p {
 }
 .info p {
   color: hsl(270, 7%, 64%);
+}
+
+@media (min-width: 1280px) {
+  body {
+    flex-direction: row;
+  }
+  .background {
+    height: 80vh;
+    width: 40vw;
+    border-radius: 0px 0px 50% 50%;
+    transform: translateX(-100px);
+  }
+  .mobile {
+    top: 10%;
+    left: 30%;
+  }
+  .info {
+    margin-inline-start: 200px;
+    text-align: start;
+    align-items: flex-start;
+  }
+  .background2 {
+    position: absolute;
+    z-index: -1;
+    right: -200px;
+    bottom: 0;
+    height: 80vh;
+    width: 40vw;
+    border-radius: 50% 50% 0% 0px;
+    background: hsl(270, 20%, 96%);
+  }
 }/*# sourceMappingURL=main.css.map */

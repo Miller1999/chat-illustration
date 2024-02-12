@@ -12,6 +12,7 @@ $VeryLightMagenta: hsl(289, 100%, 72%)
 $Rubik: 'Rubik', sans-serif
 *
   font-family: $Rubik
+  box-sizing: content-box
 
 html
   font-size: 62.5%
@@ -174,13 +175,13 @@ p
     height: 3.125rem
     background-color: white
     border-radius: 20px
-
 .info
   display: flex
   flex-direction: column
   margin-block-start: 150px
   align-items: center
   width: 85%
+  max-width: 400px
   align-self: center
   text-align: center
   padding: 5rem
@@ -190,3 +191,28 @@ p
     color: $VeryDarkDesaturatedViolet
   p
     color: $DarkGrayishViolet
+
+@media (min-width: 1280px)
+  body
+    flex-direction: row
+  .background
+    height: 80vh
+    width: 40vw
+    border-radius: 0px 0px 50% 50%
+    transform: translateX(-100px)
+  .mobile
+    top: 10%
+    left: 30%
+  .info
+    margin-inline-start: 200px
+    text-align: start
+    align-items: flex-start
+  .background2
+    position: absolute
+    z-index: -1
+    right: -200px
+    bottom: 0
+    height: 80vh
+    width: 40vw
+    border-radius: 50% 50% 0% 0px
+    background: $LightGrayishViolet
